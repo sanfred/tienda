@@ -121,7 +121,7 @@
 <!----------------------------------------------------Ventana modal de Login---------------------------------------------------->
 <div class="modal fade" id="modal-sesion" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal-1" data-bs-backdrop="static">
     <div class="modal-dialog modal-dialog-centered justify-content-center rounded-3">
-        <div class="modal-content bg-dark shadow p-3 w-50">
+        <div class="modal-content bg-dark p-3 w-auto h-auto border-white border-4 shadow">
             <button class="modal-header btn-close bg-light ms-auto h-auto w-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             <div class="d-flex justify-content-center ">
                 <img src="/img/login-icon.svg" style="height: 7rem"/>
@@ -153,38 +153,20 @@
 <!--------------------------------------------------ventana modal signup--------------------------------------------------------->
 <div class="modal fade" id="modal-registro" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal-1" data-bs-backdrop="static">
     <div class="modal-dialog modal-dialog-centered justify-content-center">
-        <div class="modal-content bg-dark shadow p-3 w-50">
+        <div class="modal-content bg-dark p-3 w-auto h-auto border-white border-4 shadow">
             <button class="modal-header btn-close bg-light ms-auto h-auto w-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             <div class="d-flex justify-content-center ">
                 <img src="/img/login-icon.svg" style="height: 7rem"/>
             </div>
             <div class="text-center fs-1 fw-bold text-secondary">Registro</div>
-            <div class="input-group mt-2">
-                <div class="input-group-text bg-dark">
-                    <img src="/img/username-icon.svg" style="height: 1rem"/>
-                </div>
-                <input class="form-control" type="text" placeholder="Nombre de usuario"/>
-            </div>
-            <div class="input-group mt-2">
-                <div class="input-group-text bg-dark">
-                    <img src="/img/email.png" style="height: 1rem"/>
-                </div>
-                <input class="form-control" type="text" placeholder="Correo electrónico"/>
-            </div>
-            <div class="input-group mt-1">
-                <div class="input-group-text bg-dark">
-                <img src="/img/password-icon.svg" style="height: 1rem"/>
-                </div>
-                <input class="form-control bg-light" type="password" placeholder="Contraseña"
-                />
-            </div>
-            <div class="input-group mt-1">
-                <div class="input-group-text bg-dark">
-                <img src="/img/password-icon.svg" style="height: 1rem"/>
-                </div>
-                <input class="form-control bg-light" type="password" placeholder="Contraseña"
-                />
-            </div>
+            <span class="text-light">Nombre de usuario</span>
+            <input class="form-control" type="text" placeholder="Digite un nombre de usuario"/>
+            <span class="text-light mt-2">Correo electrónico</span>
+            <input class="form-control" type="text" placeholder="Digite un correo electrónico"/>
+            <span class="text-light mt-2">Contraseña</span>
+            <input class="form-control bg-light" type="password" placeholder="Digite una contraseña"/>
+            <span class="text-light mt-2">Confirmar contraseña</span>
+            <input class="form-control bg-light" type="password" placeholder="Digite la contraseña"/>
             <button class="btn btn-light text-dark mt-4 shadow w-auto mx-auto" type="submit">Registrar</button>
         </div>      
     </div>
